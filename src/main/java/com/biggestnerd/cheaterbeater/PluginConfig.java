@@ -32,7 +32,7 @@ public class PluginConfig {
 			plugin.log("Debug messages enabled");
 		}
 		
-		broadcastPermission = config.getString("broadcast_permission", "blocker.broadcast");
+		broadcastPermission = config.getString("broadcast_permission", "cheaterbeater.broadcast");
 		if(debug) {
 			plugin.log(Level.INFO, "broadcast_permission set to {0}", broadcastPermission);
 		}
