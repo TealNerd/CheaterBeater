@@ -1,0 +1,22 @@
+name: ${project.name}
+main: ${project.groupId}.${project.artifactId}
+author: biggestnerd
+version: ${project.version}
+depends: [ProtocolLib]
+commands:
+  cb:
+    description: Shows and controls beaters
+    usage: |
+      /<command>
+      /<command> <beater>
+      /<command> <beater> enable|disable
+      /<command> <beater> get|set <config> [value]
+      /<command> <beater> flag <player>
+    permission: cheaterbeater.modify
+permissions:
+  cheaterbeater.*:
+    description: Gives access to all CheaterBeater commands
+    default: op
+    children:
+      cheaterbeater.broadcast: true
+      cheaterbeater.modify: true
